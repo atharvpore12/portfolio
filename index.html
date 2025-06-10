@@ -1,120 +1,130 @@
 <!DOCTYPE html>
-<html lang="en" class="transition duration-500">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Atharva Pore's Portfolio</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    // Enable dark mode class strategy
-    tailwind.config = {
-      darkMode: 'class',
-    }
-  </script>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>For Her❤️</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body class="bg-[#0a0a23] text-white dark:bg-white dark:text-[#0a0a23] transition duration-500">
+<body>
+  <div class="custom-cursor"></div>
 
-  <!-- Navbar -->
-  <nav class="bg-[#0f172a] dark:bg-gray-200 p-4 shadow-md sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-[#facc15] dark:text-yellow-600">Atharva Pore's Portfolio</h1>
-      <div class="flex items-center space-x-4">
-        <a href="#home" class="hover:text-[#facc15] dark:hover:text-yellow-600">Home</a>
-        <a href="#about" class="hover:text-[#facc15] dark:hover:text-yellow-600">About</a>
-        <a href="#projects" class="hover:text-[#facc15] dark:hover:text-yellow-600">Projects</a>
-        <a href="#contact" class="hover:text-[#facc15] dark:hover:text-yellow-600">Contact</a>
-        <!-- Toggle Button -->
-        <button onclick="toggleMode()" id="modeToggle" class="ml-4 bg-[#facc15] text-[#0a0a23] px-3 py-1 rounded-full text-sm font-semibold shadow hover:bg-yellow-400 transition">
-          🌙 Dark
-        </button>
-      </div>
-    </div>
+  <nav class="navbar">
+    <div class="logo">Heyyy Samaa ❤️</div>
   </nav>
 
-  <!-- Hero -->
-  <section id="home" class="h-screen flex items-center justify-center bg-gradient-to-br from-[#0f172a] to-[#1e293b] dark:from-white dark:to-gray-100 text-center transition">
-    <div>
-      <h2 class="text-5xl md:text-6xl font-bold text-[#facc15] dark:text-yellow-600 mb-4">Hi, I'm Atharv Pore👨‍💻</h2>
-      <p class="text-xl md:text-2xl text-gray-300 dark:text-gray-700">I build elegant and classy web experiences</p>
-    </div>
+  <section class="hero reveal">
+    <h1>For the Most beautiful Woman on the earth 🥹😙🧿🫂</h1>
+    <p>A little suprise from your Chingyaaa😂😎😙.</p>
   </section>
 
-  <!-- About -->
-  <section id="about" class="max-w-5xl mx-auto px-6 py-20">
-    <h2 class="text-3xl font-bold text-[#facc15] dark:text-yellow-600 mb-6 border-b pb-2 border-gray-600">About Me</h2>
-    <p class="text-lg text-gray-300 dark:text-gray-700 leading-relaxed">
-    Hey there! I'm Atharva Chandrashekhar Pore, a passionate and driven student working towards becoming a Computer Engineer. Since 2020, I’ve been exploring the world of programming, web development, and AI with full energy and curiosity.
-
-I scored 91.4% in 10th standard and am currently studying at Fr. Agnels Multipurpose School and Junior College. I'm a self-learner who loves to experiment and build things — from writing HTML and CSS to understanding the basics of C++. One of my proudest projects is this personal portfolio, created as part of my learning journey using VS Code and a bit of help from ChatGPT 😄.
-
-Outside of coding, I enjoy outdoor sports, gaming, and diving into anything creative and tech-related. I'm always open to learning new things, taking on challenges, and connecting with like-minded people.
-
-Let’s build the future together!
-
-
-    </p>
+  <section class="love-message reveal">
+    <h2>To the One Who Means Everything 💖</h2>
+    <p>I hope you feel it — in every little thing I do, in every dream I chase. You're not just part of my story... you are the story.</p>
+    <p>Your smile gives me peace, your voice gives me strength, and your love gives me purpose. I’m not building a future alone — I’m building it with you in mind.</p>
+    <p class="signature">Forever yours,  
+    <br><strong>— Atharva 🖤</strong></p>
   </section>
 
-  <!-- Projects -->
-  <section id="projects" class="bg-[#1e293b] dark:bg-gray-100 py-20 px-6 transition">
-    <div class="max-w-6xl mx-auto">
-      <h2 class="text-3xl font-bold text-[#facc15] dark:text-yellow-600 mb-10 border-b pb-2 border-gray-600">My Projects</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-[#0f172a] dark:bg-white p-6 rounded-lg shadow-lg hover:shadow-[#facc15]/40 transition">
-          <h3 class="text-xl font-semibold mb-2 text-[#facc15] dark:text-yellow-600">Project One</h3>
-          <p class="text-gray-400 dark:text-gray-700">This is my first project!! My own Portfolio website!</p>
-        </div>
-        <div class="bg-[#0f172a] dark:bg-white p-6 rounded-lg shadow-lg hover:shadow-[#facc15]/40 transition">
-          <h3 class="text-xl font-semibold mb-2 text-[#facc15] dark:text-yellow-600">Project Two</h3>
-          <p class="text-gray-400 dark:text-gray-700">Coming soon... 👀</p>
-        </div>
-        <div class="bg-[#0f172a] dark:bg-white p-6 rounded-lg shadow-lg hover:shadow-[#facc15]/40 transition">
-          <h3 class="text-xl font-semibold mb-2 text-[#facc15] dark:text-yellow-600">Project Three</h3>
-          <p class="text-gray-400 dark:text-gray-700">Coming soon... 👀</p>
-        </div>
-      </div>
-    </div>
+  <section class="love-points reveal">
+    <h2>What I Love About You 💗</h2>
+    <ul>
+      <li>Your smile — it's my favorite view.</li>
+      <li>Your voice — my calm in the storm.</li>
+      <li>Your support — my fuel on tough days.</li>
+      <li>Your heart — the kindest I’ve ever known.</li>
+      <li>The way you believe in me — always.</li>
+    </ul>
   </section>
 
-  <!-- Contact -->
-<section id="contact" class="py-20 px-6 bg-[#0a0a23] dark:bg-white transition">
-  <div class="max-w-4xl mx-auto text-center">
-    <h2 class="text-3xl font-bold text-[#facc15] dark:text-yellow-600 mb-4 border-b pb-2 border-gray-600">
-      Let's Connect
-    </h2>
-    <p class="mb-6 text-gray-300 dark:text-gray-700 text-lg">
-      Want to collaborate or just say hello? Drop me a mail! 📬
-    </p>
-    <a href="mailto:workpore12@gmail.com" 
-       class="inline-block bg-[#facc15] text-[#0a0a23] font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-yellow-400 transition duration-300">
-      📩 Email Me
-    </a>
+  <section class="promises reveal">
+    <h2>My Promises to You 🕊️</h2>
+    <p>I promise to always try harder, just so you can rest softer.</p>
+    <p>I promise to keep chasing the stars — but never forget you're my brightest one.</p>
+    <p>I promise to always make time — for your words, your smile, your silence, your everything.</p>
+  </section>
+
+  <div class="secret-message reveal" onclick="this.classList.add('revealed')">
+    💛 Click Me If You Miss Me
+    <div class="reveal-text">You found it — just like I found you, when I needed you the most. 💫</div>
   </div>
-</section>
 
-  <!-- Footer -->
-  <footer class="bg-[#0f172a] dark:bg-gray-200 text-center p-4 text-sm text-gray-400 dark:text-gray-700">
-    © 2025 Atharva's Portfolio — Designed with 💻 by Atharva Pore
-  </footer>
+  <canvas id="star-canvas"></canvas>
 
-  <!-- Script -->
   <script>
-    function toggleMode() {
-      const html = document.documentElement;
-      html.classList.toggle('dark');
+    // Glowing star canvas
+    const canvas = document.getElementById("star-canvas");
+    const ctx = canvas.getContext("2d");
 
-      const btn = document.getElementById('modeToggle');
-      if (html.classList.contains('dark')) {
-        btn.innerHTML = "☀️ Light";
-      } else {
-        btn.innerHTML = "🌙 Dark";
+    let stars = [];
+    function initStars(count) {
+      stars = [];
+      for (let i = 0; i < count; i++) {
+        stars.push({
+          x: Math.random() * window.innerWidth,
+          y: Math.random() * window.innerHeight,
+          r: Math.random() * 1.5,
+          d: Math.random() * 0.5,
+        });
       }
     }
+
+    function drawStars() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = "white";
+      ctx.shadowBlur = 5;
+      ctx.shadowColor = "white";
+      stars.forEach((star) => {
+        ctx.beginPath();
+        ctx.arc(star.x, star.y, star.r, 0, Math.PI * 2);
+        ctx.fill();
+      });
+      moveStars();
+    }
+
+    function moveStars() {
+      stars.forEach((star) => {
+        star.y += star.d;
+        if (star.y > window.innerHeight) {
+          star.y = 0;
+          star.x = Math.random() * window.innerWidth;
+        }
+      });
+    }
+
+    function animateStars() {
+      drawStars();
+      requestAnimationFrame(animateStars);
+    }
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      initStars(150);
+    }
+
+    window.addEventListener("resize", resizeCanvas);
+    resizeCanvas();
+    animateStars();
+
+    // Intersection Observer for scroll animations
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    reveals.forEach(reveal => observer.observe(reveal));
+
+    // Custom Cursor (only for desktop)
+    const cursor = document.querySelector(".custom-cursor");
+    document.addEventListener("mousemove", (e) => {
+      cursor.style.left = e.clientX + "px";
+      cursor.style.top = e.clientY + "px";
+    });
   </script>
 </body>
 </html>
