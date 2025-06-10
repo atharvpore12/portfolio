@@ -1,1 +1,165 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #000;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+canvas#star-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.navbar {
+  padding: 20px;
+  text-align: center;
+  background-color: #000;
+  box-shadow: 0 0 10px gold;
+}
+
+.logo {
+  font-size: 2rem;
+  color: gold;
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px 60px;
+  background: radial-gradient(circle, rgba(0,0,0,1) 60%, rgba(255,215,0,0.1) 100%);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: gold;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-top: 10px;
+}
+
+section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s ease;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.love-message, .love-points, .promises {
+  max-width: 700px;
+  margin: 80px auto;
+  padding: 30px;
+  background: rgba(255, 215, 0, 0.05);
+  border: 1px solid gold;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+}
+
+.love-message h2, .love-points h2, .promises h2 {
+  font-size: 2rem;
+  color: gold;
+  margin-bottom: 20px;
+}
+
+.love-message p, .promises p, .love-points li {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #f8f8f8;
+  margin-bottom: 20px;
+}
+
+.love-message .signature {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #e0e0e0;
+}
+
+.love-points ul {
+  list-style-type: "✨ ";
+  padding-left: 0;
+}
+
+.love-points li {
+  margin: 15px 0;
+  transition: transform 0.3s ease;
+}
+
+.love-points li:hover {
+  transform: scale(1.03);
+  color: gold;
+}
+
+.promises {
+  font-style: italic;
+  text-align: left;
+  background: linear-gradient(135deg, rgba(255,215,0,0.1), rgba(0,0,0,0.8));
+  border-left: 4px solid gold;
+  border-radius: 12px;
+}
+
+.secret-message {
+  max-width: 600px;
+  margin: 80px auto;
+  text-align: center;
+  color: #fff;
+  font-size: 1.1rem;
+  border: 1px dashed gold;
+  padding: 25px;
+  border-radius: 12px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+.secret-message:hover {
+  background: rgba(255, 215, 0, 0.05);
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+}
+
+.reveal-text {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  font-style: italic;
+  margin-top: 15px;
+  transition: all 0.6s ease-in-out;
+  color: gold;
+}
+
+.secret-message.revealed .reveal-text {
+  opacity: 1;
+  max-height: 200px;
+}
+
+/* Custom Cursor (desktop only) */
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background-color: gold;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+  box-shadow: 0 0 10px gold, 0 0 20px gold;
+}
+
+@media (max-width: 768px) {
+  .custom-cursor {
+    display: none;
+  }
+}
 
